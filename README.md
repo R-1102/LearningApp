@@ -24,3 +24,14 @@ This project is an Android application built using Jetpack Compose. implementing
 5. Run the app on an emulator or a physical device.
 
 
+## UI Design 
+
+<p align="center">
+   <img src="https://github.com/user-attachments/assets/aec3c2cf-8577-4da0-a599-6aca096c7eda" height="500" Width="220"/>
+  <img src="https://github.com/user-attachments/assets/f9405814-1e0d-4425-84d0-80fe21096438" height="500"  Width="220"/>
+  <img src="https://github.com/user-attachments/assets/b121ab88-dd7d-43ce-9664-2b48071bdd03" height="500" Width="220"/>
+   <img src="https://github.com/user-attachments/assets/81c5a2e6-e2c7-44ee-9525-22ef0f0da85c" height="500" Width="220" />
+  <img src="https://github.com/user-attachments/assets/0d7e3379-36a6-4976-a092-114b1e5a387c" height="500" Width="220"/>
+</p>
+
+
