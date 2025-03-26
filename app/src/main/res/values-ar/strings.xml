@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">تطبيق التعلم</string>
+
+    <string name="skip">تخطي</string>
+
+    <string name="S1_header" >العديد من الدورات التجريبية المجانية</string>
+    <string name="S1_body">دورات مجانية تساعدك على إيجاد طريقك نحو التعلم</string>
+
+    <string name="S2_header" >تعلم سريع وسهل</string>
+    <string name="S2_body">تعلم سهل وسريع في أي وقت لمساعدتك على تحسين مهاراتك المختلفة</string>
+
+    <string name="S3_header" >أنشئ خطة الدراسة الخاصة بك</string>
+    <string name="S3_body">ادرس وفقًا لخطة الدراسة، واجعل الدراسة أكثر تحفيزًا</string>
+
+    <string name="Signup">تسجيل</string>
+    <string name="Login">تسجيل الدخول </string>
+
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+
+    <string name="create_account">أنشئ حساب</string>
+    <string name="already_have_account">لديك حساب بالفعل؟</string>
+
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="or">أو سجل بإستخدام</string>
+
+
+    <string name="S4_subtitle">أدخل تفاصيلك أدناه وسجل مجانًا</string>
+    <string name="Signup_h">تسجيل</string>
+    <string name="Login_h">تسجيل الدخول</string>
+
+
+    <string name="Terms">من خلال إنشاء حساب فإنك توافق على الشروط والأحكام الخاصة بنا.</string>
+    <string name="dont_have_account">ليس لديك حساب؟</string>
+
+
+
+
+
+</resources>
+
