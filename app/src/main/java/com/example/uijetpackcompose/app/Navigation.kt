@@ -1,5 +1,9 @@
 package com.example.uijetpackcompose.app
 
+import androidx.compose.animation.AnimatedContentTransitionScope
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -16,8 +20,43 @@ fun Navigation(navController: NavHostController) {
         navController = navController,
         startDestination = "screen1",
     ) {
-        composable("screen1") { Screen1(navController) }
-        composable("screen2") { Screen2(navController) }
+        composable(
+            "screen1",
+            exitTransition = {
+                slideOutOfContainer(
+                    AnimatedContentTransitionScope.SlideDirection.Left,
+                    animationSpec = tween(700)
+
+                ) + fadeOut()
+            },
+            popEnterTransition = {
+                slideIntoContainer(
+                    AnimatedContentTransitionScope.SlideDirection.Right,
+                    animationSpec = tween(700)
+                ) + fadeIn()
+            }
+
+        )
+         { Screen1(navController) }
+
+        composable(
+            "screen2",
+            exitTransition = {
+                slideOutOfContainer(
+                    AnimatedContentTransitionScope.SlideDirection.Left,
+                    animationSpec = tween(700)
+
+                ) + fadeOut()
+            },
+            popEnterTransition = {
+                slideIntoContainer(
+                    AnimatedContentTransitionScope.SlideDirection.Right,
+                    animationSpec = tween(700)
+                ) + fadeIn()
+            }
+
+        ) { Screen2(navController) }
+
         composable("screen3") { Screen3(navController) }
         composable("SignUp") { SignUp(navController) }
         composable("Login") { Login(navController) }

@@ -1,7 +1,9 @@
 package com.example.uijetpackcompose.app.presentation.ui
 
+import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -73,12 +75,22 @@ fun SignUp(navController: NavHostController) {
 
             Spacer(modifier = Modifier.height(20.dp))
 
+
+            var expanded by remember { mutableStateOf(false) }
             Box(
                 modifier = Modifier
-                    .fillMaxWidth()
                     .background(color = Color(0xFF2F2F42), shape = RoundedCornerShape(10.dp))
                     .padding(16.dp)
-                    .height(700.dp)
+                    .animateContentSize()
+                    .height(if (expanded) 700.dp else 70.dp)
+                    .fillMaxWidth()
+                    .clickable(
+                        interactionSource = remember { MutableInteractionSource() },
+                        indication = null
+                    ) {
+                        expanded = !expanded
+                    }
+
             ) {
                 Column {
 
@@ -89,6 +101,7 @@ fun SignUp(navController: NavHostController) {
                     TextField(
                         value = email,
                         onValueChange = { email = it },
+                        maxLines=1,
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(56.dp)
@@ -105,6 +118,7 @@ fun SignUp(navController: NavHostController) {
                     TextField(
                         value = password,
                         onValueChange = { password = it },
+                        maxLines=1,
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(56.dp),

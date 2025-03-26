@@ -27,13 +27,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
+import androidx.navigation.NavController
 import com.example.uijetpackcompose.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun Screen3(navController: NavHostController) {
+fun Screen3(navController: NavController) {
 
     Column(
         modifier = Modifier
@@ -123,9 +123,7 @@ fun Screen3(navController: NavHostController) {
                 Text(
                     text = stringResource(id = R.string.Login),
                     color = Color.White,
-
                     )
-
             }
         }
     }

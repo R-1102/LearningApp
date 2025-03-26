@@ -14,6 +14,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -27,13 +30,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
+import androidx.navigation.NavController
 import com.example.uijetpackcompose.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun Screen2(navController: NavHostController) {
+fun Screen2(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -89,6 +92,22 @@ fun Screen2(navController: NavHostController) {
                 textAlign = TextAlign.Center
 
             )
+            Spacer(modifier = Modifier.height(90.dp))
+
+            Button(
+                onClick = { navController.navigate("Screen3") },
+                shape = RoundedCornerShape(30.dp),
+                colors = ButtonDefaults.buttonColors(Color(0xFFF0E0FC)),
+                modifier = Modifier
+                    .size(width = 75.dp, height = 60.dp)
+
+            ) {
+                Text(
+                    text = stringResource(id = R.string.next),
+                    fontSize = 12.sp,
+                    color = Color(0xFF261D33)
+                )
+            }
         }
     }
 }
