@@ -134,7 +134,6 @@ fun SignUp(navController: NavHostController) {
 
                     Spacer(modifier = Modifier.height(20.dp))
 
-
                     Button(
                         onClick = { /* TODO: Add sign up logic */ },
                         shape = RoundedCornerShape(10.dp),
