@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "636733624631",
+    "project_id": "ui-jetpackcompose",
+    "storage_bucket": "ui-jetpackcompose.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636733624631:android:66a9b86f6f8122f03c0ab2",
+        "android_client_info": {
+          "package_name": "com.example.uijetpackcompose"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG4Mm1GJqAEIX10n8MachCkJG08QPeaWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
