@@ -4,12 +4,16 @@
 This project is an Android application built using Jetpack Compose. implementing:
 - **Animations**: Smooth UI transitions.
 - **Localization**: Supports English and Arabic languages.
+- **Firebase Cloud Messaging**: Handles push notifications.
+- **Firebase Analytics**: Tracks user events and app usage.
 
 
 ## Features
 - Dynamic UI with Jetpack Compose.
 - Locale switching (English & Arabic).
 - Animated visibility transitions.
+- Receive push notifications via Firebase Cloud Messaging.
+- Event tracking with Firebase Analytics.
 
 
 ## How to Run the App
@@ -23,6 +27,21 @@ This project is an Android application built using Jetpack Compose. implementing
 4. Sync the Gradle files.
 5. Run the app on an emulator or a physical device.
 
+
+
+## Firebase Notifications
+- Firebase Cloud Messaging (FCM) is integrated.
+- On app startup, the FCM token is logged via Logcat.
+
+## Firebase Analytics
+- app_open
+- screen_view
+- button_click
+- notification_received
+- notification_opened
+  
+How Events Were Tested
+Events will appear in Firebase Analytics.
 
 ## UI Design 
 
